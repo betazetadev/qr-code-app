@@ -2,6 +2,9 @@
 
 This Flutter application allows users to generate and scan QR codes for managing employee access to a workplace. It simplifies the process of employee identification and improves security by encoding personal and job-related details into QR codes.
 
+![App Screenshot](https://github.com/betazetadev/qr_code_app/QRCodeApp.png "QR Code App Screenshot")
+
+
 ## Features
 
 - **Generate QR Code:** Users can enter their employee details such as ID, name, position, and work center to generate a QR code.
