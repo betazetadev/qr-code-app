@@ -21,10 +21,10 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final idController = TextEditingController();
-  final nombreController = TextEditingController();
-  final apellidoController = TextEditingController();
-  final puestoController = TextEditingController();
-  final centroTrabajoController = TextEditingController();
+  final nameController = TextEditingController();
+  final lastNameController = TextEditingController();
+  final positionController = TextEditingController();
+  final workCenterController = TextEditingController();
   String qrData = "Empty QR Code";
   final GlobalKey globalKey = new GlobalKey();
 
@@ -70,7 +70,7 @@ class _MyAppState extends State<MyApp> {
             Padding(
               padding: EdgeInsets.all(10),
               child: TextField(
-                controller: nombreController,
+                controller: nameController,
                 decoration: InputDecoration(
                   hintText: "First Name",
                 ),
@@ -79,7 +79,7 @@ class _MyAppState extends State<MyApp> {
             Padding(
               padding: EdgeInsets.all(10),
               child: TextField(
-                controller: apellidoController,
+                controller: lastNameController,
                 decoration: InputDecoration(
                   hintText: "Last Name",
                 ),
@@ -88,7 +88,7 @@ class _MyAppState extends State<MyApp> {
             Padding(
               padding: EdgeInsets.all(10),
               child: TextField(
-                controller: puestoController,
+                controller: positionController,
                 decoration: InputDecoration(
                   hintText: "Job Title",
                 ),
@@ -97,7 +97,7 @@ class _MyAppState extends State<MyApp> {
             Padding(
               padding: EdgeInsets.all(10),
               child: TextField(
-                controller: centroTrabajoController,
+                controller: workCenterController,
                 decoration: InputDecoration(
                   hintText: "Work Center",
                 ),
@@ -109,10 +109,10 @@ class _MyAppState extends State<MyApp> {
                 onPressed: () async {
                   var employeeData = {
                     "id": idController.text,
-                    "nombre": nombreController.text,
-                    "apellidos": apellidoController.text,
-                    "puesto": puestoController.text,
-                    "centro_trabajo": centroTrabajoController.text
+                    "name": nameController.text,
+                    "last_name": lastNameController.text,
+                    "position": positionController.text,
+                    "work_center": workCenterController.text
                   };
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
