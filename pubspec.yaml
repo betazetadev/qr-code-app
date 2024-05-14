@@ -30,7 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  json_annotation: ^4.0.1
   qr_flutter: ^4.1.0
   qr_code_scanner: ^1.0.1
   share_plus: ^9.0.0
